@@ -8,9 +8,9 @@
 
 Created by Roberto Sanchez Valenzuela, computer science engineering student at CETYS Universidad (Mexicali), as a project selected for Seeds for the Future México 2026.
 
-![24-second demo: a clinical note is scanned, its identifiers found and replaced with placeholders, then the review report](docs/sentinelmed-demo.gif)
+![36-second demo: a clinical note is typed, its identifiers are found and replaced with placeholders, a table is masked, then the review report and the measured results](docs/sentinelmed-demo.gif)
 
-*24-second demo ([MP4](docs/sentinelmed-demo.mp4)). All names and numbers are invented.*
+*36-second demo ([MP4](docs/sentinelmed-demo.mp4)). All names and numbers are invented.*
 
 <details><summary>The review report</summary>
 
