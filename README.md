@@ -18,7 +18,7 @@ Created by Roberto Sanchez Valenzuela, computer science engineering student at C
 
 </details>
 
-## Try it!
+## Try it
 
 ```bash
 pip install -e ".[ner,excel,dev]"
