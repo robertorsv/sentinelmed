@@ -1,0 +1,1230 @@
+{
+ "standard": {
+  "1 rules only": {
+   "records": 1000,
+   "gold": 4974,
+   "recall": 0.49115400080418176,
+   "precision": 0.8870733478576616,
+   "char_recall": 0.38560049653460227,
+   "missed": 2531,
+   "false_alarms": 311,
+   "records_with_leak": 0.983,
+   "review_share": 0.0,
+   "per_label": {
+    "ADDRESS": {
+     "gold": 496,
+     "recall": 0.0,
+     "masked": 0,
+     "precision": null
+    },
+    "BIRTHDATE": {
+     "gold": 348,
+     "recall": 1.0,
+     "masked": 348,
+     "precision": 1.0
+    },
+    "CURP": {
+     "gold": 353,
+     "recall": 1.0,
+     "masked": 353,
+     "precision": 1.0
+    },
+    "EMAIL": {
+     "gold": 373,
+     "recall": 1.0,
+     "masked": 373,
+     "precision": 1.0
+    },
+    "NAME": {
+     "gold": 2035,
+     "recall": 0.0,
+     "masked": 0,
+     "precision": null
+    },
+    "NSS": {
+     "gold": 541,
+     "recall": 1.0,
+     "masked": 695,
+     "precision": 0.7784172661870503
+    },
+    "PHONE": {
+     "gold": 650,
+     "recall": 1.0,
+     "masked": 807,
+     "precision": 0.80545229244114
+    },
+    "RFC": {
+     "gold": 178,
+     "recall": 1.0,
+     "masked": 178,
+     "precision": 1.0
+    }
+   }
+  },
+  "2 + context and name lists": {
+   "records": 1000,
+   "gold": 4974,
+   "recall": 0.9987937273823885,
+   "precision": 0.8752419496744677,
+   "char_recall": 0.9996793214027102,
+   "missed": 6,
+   "false_alarms": 709,
+   "records_with_leak": 0.006,
+   "review_share": 0.0,
+   "per_label": {
+    "ADDRESS": {
+     "gold": 496,
+     "recall": 1.0,
+     "masked": 496,
+     "precision": 1.0
+    },
+    "BIRTHDATE": {
+     "gold": 348,
+     "recall": 1.0,
+     "masked": 348,
+     "precision": 1.0
+    },
+    "CURP": {
+     "gold": 353,
+     "recall": 1.0,
+     "masked": 353,
+     "precision": 1.0
+    },
+    "EMAIL": {
+     "gold": 373,
+     "recall": 1.0,
+     "masked": 373,
+     "precision": 1.0
+    },
+    "NAME": {
+     "gold": 2035,
+     "recall": 0.9970515970515971,
+     "masked": 2433,
+     "precision": 0.8364159473900534
+    },
+    "NSS": {
+     "gold": 541,
+     "recall": 1.0,
+     "masked": 695,
+     "precision": 0.7784172661870503
+    },
+    "PHONE": {
+     "gold": 650,
+     "recall": 1.0,
+     "masked": 807,
+     "precision": 0.80545229244114
+    },
+    "RFC": {
+     "gold": 178,
+     "recall": 1.0,
+     "masked": 178,
+     "precision": 1.0
+    }
+   }
+  },
+  "3 + language model (spaCy)": {
+   "records": 1000,
+   "gold": 4974,
+   "recall": 0.9987937273823885,
+   "precision": 0.8571428571428571,
+   "char_recall": 0.9996793214027102,
+   "missed": 6,
+   "false_alarms": 829,
+   "records_with_leak": 0.006,
+   "review_share": 0.0,
+   "per_label": {
+    "ADDRESS": {
+     "gold": 496,
+     "recall": 1.0,
+     "masked": 496,
+     "precision": 1.0
+    },
+    "BIRTHDATE": {
+     "gold": 348,
+     "recall": 1.0,
+     "masked": 348,
+     "precision": 1.0
+    },
+    "CURP": {
+     "gold": 353,
+     "recall": 1.0,
+     "masked": 353,
+     "precision": 1.0
+    },
+    "EMAIL": {
+     "gold": 373,
+     "recall": 1.0,
+     "masked": 373,
+     "precision": 1.0
+    },
+    "NAME": {
+     "gold": 2035,
+     "recall": 0.9970515970515971,
+     "masked": 2553,
+     "precision": 0.7971014492753623
+    },
+    "NSS": {
+     "gold": 541,
+     "recall": 1.0,
+     "masked": 695,
+     "precision": 0.7784172661870503
+    },
+    "PHONE": {
+     "gold": 650,
+     "recall": 1.0,
+     "masked": 807,
+     "precision": 0.80545229244114
+    },
+    "RFC": {
+     "gold": 178,
+     "recall": 1.0,
+     "masked": 178,
+     "precision": 1.0
+    }
+   }
+  },
+  "4 + confirmation classifier": {
+   "records": 1000,
+   "gold": 4974,
+   "recall": 0.9987937273823885,
+   "precision": 0.985731272294887,
+   "char_recall": 0.9996793214027102,
+   "missed": 6,
+   "false_alarms": 72,
+   "records_with_leak": 0.006,
+   "review_share": 0.012407375495433396,
+   "per_label": {
+    "ADDRESS": {
+     "gold": 496,
+     "recall": 1.0,
+     "masked": 496,
+     "precision": 1.0
+    },
+    "BIRTHDATE": {
+     "gold": 348,
+     "recall": 1.0,
+     "masked": 348,
+     "precision": 1.0
+    },
+    "CURP": {
+     "gold": 353,
+     "recall": 1.0,
+     "masked": 353,
+     "precision": 1.0
+    },
+    "EMAIL": {
+     "gold": 373,
+     "recall": 1.0,
+     "masked": 373,
+     "precision": 1.0
+    },
+    "NAME": {
+     "gold": 2035,
+     "recall": 0.9970515970515971,
+     "masked": 2107,
+     "precision": 0.965828191741813
+    },
+    "NSS": {
+     "gold": 541,
+     "recall": 1.0,
+     "masked": 541,
+     "precision": 1.0
+    },
+    "PHONE": {
+     "gold": 650,
+     "recall": 1.0,
+     "masked": 650,
+     "precision": 1.0
+    },
+    "RFC": {
+     "gold": 178,
+     "recall": 1.0,
+     "masked": 178,
+     "precision": 1.0
+    }
+   }
+  },
+  "5 + patient name from table": {
+   "records": 1000,
+   "gold": 4974,
+   "recall": 0.9987937273823885,
+   "precision": 0.9855359619575986,
+   "char_recall": 0.9996793214027102,
+   "missed": 6,
+   "false_alarms": 73,
+   "records_with_leak": 0.006,
+   "review_share": 0.012579700155092194,
+   "per_label": {
+    "ADDRESS": {
+     "gold": 496,
+     "recall": 1.0,
+     "masked": 496,
+     "precision": 1.0
+    },
+    "BIRTHDATE": {
+     "gold": 348,
+     "recall": 1.0,
+     "masked": 348,
+     "precision": 1.0
+    },
+    "CURP": {
+     "gold": 353,
+     "recall": 1.0,
+     "masked": 353,
+     "precision": 1.0
+    },
+    "EMAIL": {
+     "gold": 373,
+     "recall": 1.0,
+     "masked": 373,
+     "precision": 1.0
+    },
+    "NAME": {
+     "gold": 2035,
+     "recall": 0.9970515970515971,
+     "masked": 2108,
+     "precision": 0.965370018975332
+    },
+    "NSS": {
+     "gold": 541,
+     "recall": 1.0,
+     "masked": 541,
+     "precision": 1.0
+    },
+    "PHONE": {
+     "gold": 650,
+     "recall": 1.0,
+     "masked": 650,
+     "precision": 1.0
+    },
+    "RFC": {
+     "gold": 178,
+     "recall": 1.0,
+     "masked": 178,
+     "precision": 1.0
+    }
+   }
+  }
+ },
+ "hard": {
+  "1 rules only": {
+   "records": 1000,
+   "gold": 5185,
+   "recall": 0.4478302796528447,
+   "precision": 0.8004136504653567,
+   "char_recall": 0.32956520922015803,
+   "missed": 2863,
+   "false_alarms": 579,
+   "records_with_leak": 0.998,
+   "review_share": 0.0,
+   "per_label": {
+    "ADDRESS": {
+     "gold": 664,
+     "recall": 0.0,
+     "masked": 0,
+     "precision": null
+    },
+    "BIRTHDATE": {
+     "gold": 314,
+     "recall": 1.0,
+     "masked": 314,
+     "precision": 1.0
+    },
+    "CURP": {
+     "gold": 313,
+     "recall": 1.0,
+     "masked": 313,
+     "precision": 1.0
+    },
+    "EMAIL": {
+     "gold": 301,
+     "recall": 1.0,
+     "masked": 301,
+     "precision": 1.0
+    },
+    "NAME": {
+     "gold": 2199,
+     "recall": 0.0,
+     "masked": 0,
+     "precision": null
+    },
+    "NSS": {
+     "gold": 612,
+     "recall": 1.0,
+     "masked": 909,
+     "precision": 0.6732673267326733
+    },
+    "PHONE": {
+     "gold": 720,
+     "recall": 1.0,
+     "masked": 1002,
+     "precision": 0.718562874251497
+    },
+    "RFC": {
+     "gold": 62,
+     "recall": 1.0,
+     "masked": 62,
+     "precision": 1.0
+    }
+   }
+  },
+  "2 + context and name lists": {
+   "records": 1000,
+   "gold": 5185,
+   "recall": 0.9994214079074253,
+   "precision": 0.7510517916727114,
+   "char_recall": 0.9998778413629145,
+   "missed": 3,
+   "false_alarms": 1716,
+   "records_with_leak": 0.003,
+   "review_share": 0.0,
+   "per_label": {
+    "ADDRESS": {
+     "gold": 664,
+     "recall": 1.0,
+     "masked": 664,
+     "precision": 1.0
+    },
+    "BIRTHDATE": {
+     "gold": 314,
+     "recall": 1.0,
+     "masked": 314,
+     "precision": 1.0
+    },
+    "CURP": {
+     "gold": 313,
+     "recall": 1.0,
+     "masked": 313,
+     "precision": 1.0
+    },
+    "EMAIL": {
+     "gold": 301,
+     "recall": 1.0,
+     "masked": 301,
+     "precision": 1.0
+    },
+    "NAME": {
+     "gold": 2199,
+     "recall": 0.9986357435197817,
+     "masked": 3328,
+     "precision": 0.6583533653846154
+    },
+    "NSS": {
+     "gold": 612,
+     "recall": 1.0,
+     "masked": 909,
+     "precision": 0.6732673267326733
+    },
+    "PHONE": {
+     "gold": 720,
+     "recall": 1.0,
+     "masked": 1002,
+     "precision": 0.718562874251497
+    },
+    "RFC": {
+     "gold": 62,
+     "recall": 1.0,
+     "masked": 62,
+     "precision": 1.0
+    }
+   }
+  },
+  "3 + language model (spaCy)": {
+   "records": 1000,
+   "gold": 5185,
+   "recall": 0.9994214079074253,
+   "precision": 0.7363106243777556,
+   "char_recall": 0.9998778413629145,
+   "missed": 3,
+   "false_alarms": 1854,
+   "records_with_leak": 0.003,
+   "review_share": 0.0,
+   "per_label": {
+    "ADDRESS": {
+     "gold": 664,
+     "recall": 1.0,
+     "masked": 664,
+     "precision": 1.0
+    },
+    "BIRTHDATE": {
+     "gold": 314,
+     "recall": 1.0,
+     "masked": 314,
+     "precision": 1.0
+    },
+    "CURP": {
+     "gold": 313,
+     "recall": 1.0,
+     "masked": 313,
+     "precision": 1.0
+    },
+    "EMAIL": {
+     "gold": 301,
+     "recall": 1.0,
+     "masked": 301,
+     "precision": 1.0
+    },
+    "NAME": {
+     "gold": 2199,
+     "recall": 0.9986357435197817,
+     "masked": 3466,
+     "precision": 0.6321407963069822
+    },
+    "NSS": {
+     "gold": 612,
+     "recall": 1.0,
+     "masked": 909,
+     "precision": 0.6732673267326733
+    },
+    "PHONE": {
+     "gold": 720,
+     "recall": 1.0,
+     "masked": 1002,
+     "precision": 0.718562874251497
+    },
+    "RFC": {
+     "gold": 62,
+     "recall": 1.0,
+     "masked": 62,
+     "precision": 1.0
+    }
+   }
+  },
+  "4 + confirmation classifier": {
+   "records": 1000,
+   "gold": 5185,
+   "recall": 0.9994214079074253,
+   "precision": 0.9093623748463024,
+   "char_recall": 0.9998778413629145,
+   "missed": 3,
+   "false_alarms": 516,
+   "records_with_leak": 0.003,
+   "review_share": 0.12288436922201679,
+   "per_label": {
+    "ADDRESS": {
+     "gold": 664,
+     "recall": 1.0,
+     "masked": 664,
+     "precision": 1.0
+    },
+    "BIRTHDATE": {
+     "gold": 314,
+     "recall": 1.0,
+     "masked": 314,
+     "precision": 1.0
+    },
+    "CURP": {
+     "gold": 313,
+     "recall": 1.0,
+     "masked": 313,
+     "precision": 1.0
+    },
+    "EMAIL": {
+     "gold": 301,
+     "recall": 1.0,
+     "masked": 301,
+     "precision": 1.0
+    },
+    "NAME": {
+     "gold": 2199,
+     "recall": 0.9986357435197817,
+     "masked": 2679,
+     "precision": 0.8178424785367675
+    },
+    "NSS": {
+     "gold": 612,
+     "recall": 1.0,
+     "masked": 640,
+     "precision": 0.95625
+    },
+    "PHONE": {
+     "gold": 720,
+     "recall": 1.0,
+     "masked": 720,
+     "precision": 1.0
+    },
+    "RFC": {
+     "gold": 62,
+     "recall": 1.0,
+     "masked": 62,
+     "precision": 1.0
+    }
+   }
+  },
+  "5 + patient name from table": {
+   "records": 1000,
+   "gold": 5185,
+   "recall": 0.9994214079074253,
+   "precision": 0.9093623748463024,
+   "char_recall": 0.9998778413629145,
+   "missed": 3,
+   "false_alarms": 516,
+   "records_with_leak": 0.003,
+   "review_share": 0.1214620964300953,
+   "per_label": {
+    "ADDRESS": {
+     "gold": 664,
+     "recall": 1.0,
+     "masked": 664,
+     "precision": 1.0
+    },
+    "BIRTHDATE": {
+     "gold": 314,
+     "recall": 1.0,
+     "masked": 314,
+     "precision": 1.0
+    },
+    "CURP": {
+     "gold": 313,
+     "recall": 1.0,
+     "masked": 313,
+     "precision": 1.0
+    },
+    "EMAIL": {
+     "gold": 301,
+     "recall": 1.0,
+     "masked": 301,
+     "precision": 1.0
+    },
+    "NAME": {
+     "gold": 2199,
+     "recall": 0.9986357435197817,
+     "masked": 2679,
+     "precision": 0.8178424785367675
+    },
+    "NSS": {
+     "gold": 612,
+     "recall": 1.0,
+     "masked": 640,
+     "precision": 0.95625
+    },
+    "PHONE": {
+     "gold": 720,
+     "recall": 1.0,
+     "masked": 720,
+     "precision": 1.0
+    },
+    "RFC": {
+     "gold": 62,
+     "recall": 1.0,
+     "masked": 62,
+     "precision": 1.0
+    }
+   }
+  }
+ },
+ "blind": {
+  "1 rules only": {
+   "records": 1000,
+   "gold": 4972,
+   "recall": 0.3932019308125503,
+   "precision": 0.8108668602239735,
+   "char_recall": 0.29325615885309386,
+   "missed": 3017,
+   "false_alarms": 456,
+   "records_with_leak": 1.0,
+   "review_share": 0.0,
+   "per_label": {
+    "ADDRESS": {
+     "gold": 525,
+     "recall": 0.0,
+     "masked": 0,
+     "precision": null
+    },
+    "BIRTHDATE": {
+     "gold": 376,
+     "recall": 1.0,
+     "masked": 376,
+     "precision": 1.0
+    },
+    "CURP": {
+     "gold": 185,
+     "recall": 1.0,
+     "masked": 185,
+     "precision": 1.0
+    },
+    "EMAIL": {
+     "gold": 188,
+     "recall": 1.0,
+     "masked": 188,
+     "precision": 1.0
+    },
+    "NAME": {
+     "gold": 2492,
+     "recall": 0.0,
+     "masked": 0,
+     "precision": null
+    },
+    "NSS": {
+     "gold": 382,
+     "recall": 1.0,
+     "masked": 610,
+     "precision": 0.6262295081967213
+    },
+    "PHONE": {
+     "gold": 653,
+     "recall": 1.0,
+     "masked": 881,
+     "precision": 0.7412031782065834
+    },
+    "RFC": {
+     "gold": 171,
+     "recall": 1.0,
+     "masked": 171,
+     "precision": 1.0
+    }
+   }
+  },
+  "2 + context and name lists": {
+   "records": 1000,
+   "gold": 4972,
+   "recall": 0.9746580852775543,
+   "precision": 0.8172183270829937,
+   "char_recall": 0.981224767240669,
+   "missed": 126,
+   "false_alarms": 1121,
+   "records_with_leak": 0.103,
+   "review_share": 0.0,
+   "per_label": {
+    "ADDRESS": {
+     "gold": 525,
+     "recall": 0.9504761904761905,
+     "masked": 522,
+     "precision": 1.0
+    },
+    "BIRTHDATE": {
+     "gold": 376,
+     "recall": 1.0,
+     "masked": 376,
+     "precision": 1.0
+    },
+    "CURP": {
+     "gold": 185,
+     "recall": 1.0,
+     "masked": 185,
+     "precision": 1.0
+    },
+    "EMAIL": {
+     "gold": 188,
+     "recall": 1.0,
+     "masked": 188,
+     "precision": 1.0
+    },
+    "NAME": {
+     "gold": 2492,
+     "recall": 0.9598715890850722,
+     "masked": 3200,
+     "precision": 0.7921875
+    },
+    "NSS": {
+     "gold": 382,
+     "recall": 1.0,
+     "masked": 610,
+     "precision": 0.6262295081967213
+    },
+    "PHONE": {
+     "gold": 653,
+     "recall": 1.0,
+     "masked": 881,
+     "precision": 0.7412031782065834
+    },
+    "RFC": {
+     "gold": 171,
+     "recall": 1.0,
+     "masked": 171,
+     "precision": 1.0
+    }
+   }
+  },
+  "3 + language model (spaCy)": {
+   "records": 1000,
+   "gold": 4972,
+   "recall": 0.9756637168141593,
+   "precision": 0.7880025125628141,
+   "char_recall": 0.9819766004778776,
+   "missed": 121,
+   "false_alarms": 1350,
+   "records_with_leak": 0.098,
+   "review_share": 0.0,
+   "per_label": {
+    "ADDRESS": {
+     "gold": 525,
+     "recall": 0.9504761904761905,
+     "masked": 522,
+     "precision": 1.0
+    },
+    "BIRTHDATE": {
+     "gold": 376,
+     "recall": 1.0,
+     "masked": 376,
+     "precision": 1.0
+    },
+    "CURP": {
+     "gold": 185,
+     "recall": 1.0,
+     "masked": 185,
+     "precision": 1.0
+    },
+    "EMAIL": {
+     "gold": 188,
+     "recall": 1.0,
+     "masked": 188,
+     "precision": 1.0
+    },
+    "NAME": {
+     "gold": 2492,
+     "recall": 0.9618780096308186,
+     "masked": 3435,
+     "precision": 0.7397379912663755
+    },
+    "NSS": {
+     "gold": 382,
+     "recall": 1.0,
+     "masked": 610,
+     "precision": 0.6262295081967213
+    },
+    "PHONE": {
+     "gold": 653,
+     "recall": 1.0,
+     "masked": 881,
+     "precision": 0.7412031782065834
+    },
+    "RFC": {
+     "gold": 171,
+     "recall": 1.0,
+     "masked": 171,
+     "precision": 1.0
+    }
+   }
+  },
+  "4 + confirmation classifier": {
+   "records": 1000,
+   "gold": 4972,
+   "recall": 0.9738535800482703,
+   "precision": 0.9221379692990568,
+   "char_recall": 0.9794945208865453,
+   "missed": 130,
+   "false_alarms": 421,
+   "records_with_leak": 0.106,
+   "review_share": 0.27842336683417085,
+   "per_label": {
+    "ADDRESS": {
+     "gold": 525,
+     "recall": 0.9504761904761905,
+     "masked": 522,
+     "precision": 1.0
+    },
+    "BIRTHDATE": {
+     "gold": 376,
+     "recall": 1.0,
+     "masked": 376,
+     "precision": 1.0
+    },
+    "CURP": {
+     "gold": 185,
+     "recall": 1.0,
+     "masked": 185,
+     "precision": 1.0
+    },
+    "EMAIL": {
+     "gold": 188,
+     "recall": 1.0,
+     "masked": 188,
+     "precision": 1.0
+    },
+    "NAME": {
+     "gold": 2492,
+     "recall": 0.9582664526484751,
+     "masked": 2930,
+     "precision": 0.8563139931740614
+    },
+    "NSS": {
+     "gold": 382,
+     "recall": 1.0,
+     "masked": 382,
+     "precision": 1.0
+    },
+    "PHONE": {
+     "gold": 653,
+     "recall": 1.0,
+     "masked": 653,
+     "precision": 1.0
+    },
+    "RFC": {
+     "gold": 171,
+     "recall": 1.0,
+     "masked": 171,
+     "precision": 1.0
+    }
+   }
+  },
+  "5 + patient name from table": {
+   "records": 1000,
+   "gold": 4972,
+   "recall": 0.9845132743362832,
+   "precision": 0.9226823012092341,
+   "char_recall": 0.9870540496003954,
+   "missed": 77,
+   "false_alarms": 422,
+   "records_with_leak": 0.066,
+   "review_share": 0.267572633552015,
+   "per_label": {
+    "ADDRESS": {
+     "gold": 525,
+     "recall": 0.9504761904761905,
+     "masked": 522,
+     "precision": 1.0
+    },
+    "BIRTHDATE": {
+     "gold": 376,
+     "recall": 1.0,
+     "masked": 376,
+     "precision": 1.0
+    },
+    "CURP": {
+     "gold": 185,
+     "recall": 1.0,
+     "masked": 185,
+     "precision": 1.0
+    },
+    "EMAIL": {
+     "gold": 188,
+     "recall": 1.0,
+     "masked": 188,
+     "precision": 1.0
+    },
+    "NAME": {
+     "gold": 2492,
+     "recall": 0.9795345104333868,
+     "masked": 2981,
+     "precision": 0.8584367661858436
+    },
+    "NSS": {
+     "gold": 382,
+     "recall": 1.0,
+     "masked": 382,
+     "precision": 1.0
+    },
+    "PHONE": {
+     "gold": 653,
+     "recall": 1.0,
+     "masked": 653,
+     "precision": 1.0
+    },
+    "RFC": {
+     "gold": 171,
+     "recall": 1.0,
+     "masked": 171,
+     "precision": 1.0
+    }
+   }
+  }
+ },
+ "final": {
+  "1 rules only": {
+   "records": 1000,
+   "gold": 4912,
+   "recall": 0.33713355048859933,
+   "precision": 0.7818696883852692,
+   "char_recall": 0.26953725848227134,
+   "missed": 3256,
+   "false_alarms": 462,
+   "records_with_leak": 1.0,
+   "review_share": 0.0,
+   "per_label": {
+    "ADDRESS": {
+     "gold": 576,
+     "recall": 0.0,
+     "masked": 0,
+     "precision": null
+    },
+    "BIRTHDATE": {
+     "gold": 341,
+     "recall": 0.49560117302052786,
+     "masked": 169,
+     "precision": 1.0
+    },
+    "CURP": {
+     "gold": 182,
+     "recall": 1.0,
+     "masked": 182,
+     "precision": 1.0
+    },
+    "EMAIL": {
+     "gold": 381,
+     "recall": 1.0,
+     "masked": 381,
+     "precision": 1.0
+    },
+    "NAME": {
+     "gold": 2508,
+     "recall": 0.0,
+     "masked": 0,
+     "precision": null
+    },
+    "NSS": {
+     "gold": 303,
+     "recall": 1.0,
+     "masked": 534,
+     "precision": 0.5674157303370787
+    },
+    "PHONE": {
+     "gold": 461,
+     "recall": 1.0,
+     "masked": 692,
+     "precision": 0.6661849710982659
+    },
+    "RFC": {
+     "gold": 160,
+     "recall": 1.0,
+     "masked": 160,
+     "precision": 1.0
+    }
+   }
+  },
+  "2 + context and name lists": {
+   "records": 1000,
+   "gold": 4912,
+   "recall": 0.8650244299674267,
+   "precision": 0.805161943319838,
+   "char_recall": 0.9201937103672756,
+   "missed": 663,
+   "false_alarms": 1155,
+   "records_with_leak": 0.488,
+   "review_share": 0.0,
+   "per_label": {
+    "ADDRESS": {
+     "gold": 576,
+     "recall": 0.5364583333333334,
+     "masked": 564,
+     "precision": 1.0
+    },
+    "BIRTHDATE": {
+     "gold": 341,
+     "recall": 0.49560117302052786,
+     "masked": 169,
+     "precision": 1.0
+    },
+    "CURP": {
+     "gold": 182,
+     "recall": 1.0,
+     "masked": 182,
+     "precision": 1.0
+    },
+    "EMAIL": {
+     "gold": 381,
+     "recall": 1.0,
+     "masked": 381,
+     "precision": 1.0
+    },
+    "NAME": {
+     "gold": 2508,
+     "recall": 0.9106858054226475,
+     "masked": 3246,
+     "precision": 0.7865064695009242
+    },
+    "NSS": {
+     "gold": 303,
+     "recall": 1.0,
+     "masked": 534,
+     "precision": 0.5674157303370787
+    },
+    "PHONE": {
+     "gold": 461,
+     "recall": 1.0,
+     "masked": 692,
+     "precision": 0.6661849710982659
+    },
+    "RFC": {
+     "gold": 160,
+     "recall": 1.0,
+     "masked": 160,
+     "precision": 1.0
+    }
+   }
+  },
+  "3 + language model (spaCy)": {
+   "records": 1000,
+   "gold": 4912,
+   "recall": 0.8780537459283387,
+   "precision": 0.7558956739028581,
+   "char_recall": 0.9270807490398832,
+   "missed": 599,
+   "false_alarms": 1563,
+   "records_with_leak": 0.455,
+   "review_share": 0.0,
+   "per_label": {
+    "ADDRESS": {
+     "gold": 576,
+     "recall": 0.5364583333333334,
+     "masked": 564,
+     "precision": 1.0
+    },
+    "BIRTHDATE": {
+     "gold": 341,
+     "recall": 0.49560117302052786,
+     "masked": 169,
+     "precision": 1.0
+    },
+    "CURP": {
+     "gold": 182,
+     "recall": 1.0,
+     "masked": 182,
+     "precision": 1.0
+    },
+    "EMAIL": {
+     "gold": 381,
+     "recall": 1.0,
+     "masked": 381,
+     "precision": 1.0
+    },
+    "NAME": {
+     "gold": 2508,
+     "recall": 0.9362041467304625,
+     "masked": 3721,
+     "precision": 0.7041117979037893
+    },
+    "NSS": {
+     "gold": 303,
+     "recall": 1.0,
+     "masked": 534,
+     "precision": 0.5674157303370787
+    },
+    "PHONE": {
+     "gold": 461,
+     "recall": 1.0,
+     "masked": 692,
+     "precision": 0.6661849710982659
+    },
+    "RFC": {
+     "gold": 160,
+     "recall": 1.0,
+     "masked": 160,
+     "precision": 1.0
+    }
+   }
+  },
+  "4 + confirmation classifier": {
+   "records": 1000,
+   "gold": 4912,
+   "recall": 0.8682817589576547,
+   "precision": 0.8632556445739257,
+   "char_recall": 0.9202730998620607,
+   "missed": 647,
+   "false_alarms": 751,
+   "records_with_leak": 0.479,
+   "review_share": 0.2753396845228799,
+   "per_label": {
+    "ADDRESS": {
+     "gold": 576,
+     "recall": 0.5364583333333334,
+     "masked": 564,
+     "precision": 1.0
+    },
+    "BIRTHDATE": {
+     "gold": 341,
+     "recall": 0.49560117302052786,
+     "masked": 169,
+     "precision": 1.0
+    },
+    "CURP": {
+     "gold": 182,
+     "recall": 1.0,
+     "masked": 182,
+     "precision": 1.0
+    },
+    "EMAIL": {
+     "gold": 381,
+     "recall": 1.0,
+     "masked": 381,
+     "precision": 1.0
+    },
+    "NAME": {
+     "gold": 2508,
+     "recall": 0.9170653907496013,
+     "masked": 2826,
+     "precision": 0.892073602264685
+    },
+    "NSS": {
+     "gold": 303,
+     "recall": 1.0,
+     "masked": 518,
+     "precision": 0.584942084942085
+    },
+    "PHONE": {
+     "gold": 461,
+     "recall": 1.0,
+     "masked": 692,
+     "precision": 0.6661849710982659
+    },
+    "RFC": {
+     "gold": 160,
+     "recall": 1.0,
+     "masked": 160,
+     "precision": 1.0
+    }
+   }
+  },
+  "5 + patient name from table": {
+   "records": 1000,
+   "gold": 4912,
+   "recall": 0.8973941368078175,
+   "precision": 0.8664061112098064,
+   "char_recall": 0.937927338764898,
+   "missed": 504,
+   "false_alarms": 752,
+   "records_with_leak": 0.4,
+   "review_share": 0.266615265998458,
+   "per_label": {
+    "ADDRESS": {
+     "gold": 576,
+     "recall": 0.5364583333333334,
+     "masked": 564,
+     "precision": 1.0
+    },
+    "BIRTHDATE": {
+     "gold": 341,
+     "recall": 0.49560117302052786,
+     "masked": 169,
+     "precision": 1.0
+    },
+    "CURP": {
+     "gold": 182,
+     "recall": 1.0,
+     "masked": 182,
+     "precision": 1.0
+    },
+    "EMAIL": {
+     "gold": 381,
+     "recall": 1.0,
+     "masked": 381,
+     "precision": 1.0
+    },
+    "NAME": {
+     "gold": 2508,
+     "recall": 0.9740829346092504,
+     "masked": 2963,
+     "precision": 0.8967262909213635
+    },
+    "NSS": {
+     "gold": 303,
+     "recall": 1.0,
+     "masked": 518,
+     "precision": 0.584942084942085
+    },
+    "PHONE": {
+     "gold": 461,
+     "recall": 1.0,
+     "masked": 692,
+     "precision": 0.6661849710982659
+    },
+    "RFC": {
+     "gold": 160,
+     "recall": 1.0,
+     "masked": 160,
+     "precision": 1.0
+    }
+   }
+  }
+ }
+}
