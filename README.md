@@ -10,7 +10,7 @@ Created by Roberto Sanchez Valenzuela, computer science engineering student at C
 
 ![The review report: least certain findings first, with the text in context](docs/review-report.png)
 
-## Try it
+## Try it!
 
 ```bash
 pip install -e ".[ner,excel,dev]"
